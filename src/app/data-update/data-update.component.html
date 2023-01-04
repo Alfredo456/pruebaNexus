@@ -1,0 +1,138 @@
+<div class="container movistar_body_container">
+  <div class="row movistar_logo_container d-flex align-items-center">
+    <div class="px_15p col-12">
+      <img class="movistar_logo_module_img" src="https://mi.movistar.com.ve/actualizaciondedatos/web/img/logoTitle.png">
+    </div>
+  </div>
+  <div class="row movistar_description_container">
+    <div class="col-12">
+      <span class="movistar_description_text"> Modifica tus datos o actualiza tu fecha de nacimiento, nacionalidad, ocupación, correo electrónico y teléfonos de contacto. Queremos ofrecerte el mejor servicio, asegura que tu información esté correcta.</span>
+    </div>
+  </div>
+  <form class="row movistar_form_container">
+    <div class="col-12 d-flex justify-content-center movistar_form_title_content">
+      <span class="movistar_form_title_text">Información Básica</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label movistar_form_label_text">Apellidos:</label>
+      <span class="movistar_form_info_text">{{ user.lastName ? user.lastName : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label movistar_form_label_text">Nombres:</label>
+      <span class="movistar_form_info_text">{{ user.name ? user.name : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label movistar_form_label_text">Documento de Identidad:</label>
+      <span
+        class="movistar_form_info_text">{{ user.identificationDocument ? user.identificationDocument : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label movistar_form_label_text">Sexo:</label>
+      <span class="movistar_form_info_text">{{ user.gender ? user.gender : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label movistar_form_label_text">Fecha de Nacimiento:</label>
+      <span class="movistar_form_info_text">{{ user.dateOfBirth ? user.dateOfBirth : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label movistar_form_label_text">Nacionalidad:</label>
+      <span class="movistar_form_info_text">{{ user.nationality ? user.nationality : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label movistar_form_label_text">País de Nacimiento:</label>
+      <span class="movistar_form_info_text">{{ user.countryOfBirth ? user.countryOfBirth : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label movistar_form_label_text">Estado de Nacimiento:</label>
+      <span class="movistar_form_info_text">{{ user.stateOfBirth ? user.stateOfBirth : 'Sin Información'}}</span>
+    </div>
+    <div class="col-12 movistar_form_separator_container">
+      <hr class="movistar_form_separator">
+    </div>
+    <div class="col-12 d-flex justify-content-center movistar_form_title_content">
+      <span class="movistar_form_title_text">Información de Contacto</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label d-block m_0p movistar_form_label_text">Correo Electrónico Principal:</label>
+      <span class="movistar_form_info_text p_0p">{{ user.mainEmail ? user.mainEmail : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label d-block m_0p movistar_form_label_text">Correo Electrónico Alterno:</label>
+      <span
+        class="movistar_form_info_text p_0p">{{ user.alternateEmail ? user.alternateEmail : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label d-block m_0p movistar_form_label_text">Facebook:</label>
+      <span class="movistar_form_info_text p_0p">{{ user.Facebook ? user.Facebook : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label d-block m_0p movistar_form_label_text">Twitter:</label>
+      <span class="movistar_form_info_text p_0p">{{ user.Twitter ? user.Twitter : 'Sin Información'}}</span>
+    </div>
+
+    <div class="col-12 d-flex justify-content-center movistar_form_title_content">
+      <span class="movistar_form_title_text">Teléfonos</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label movistar_form_label_text">Principal:</label>
+      <span class="movistar_form_info_text">{{ user.phoneMajor ? user.phoneMajor : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label movistar_form_label_text">Secundario:</label>
+      <span class="movistar_form_info_text">{{ user.phoneSecondary ? user.phoneSecondary : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p">
+      <label class="form-label movistar_form_label_text">Oficina:</label>
+      <span class="movistar_form_info_text">{{ user.phoneOffice ? user.phoneOffice : 'Sin Información'}}</span>
+    </div>
+    <div class="col-6 mb_18p pl_15pp">
+      <label class="form-label movistar_form_label_text">Habitación:</label>
+      <span class="movistar_form_info_text">{{ user.phoneRoom ? user.phoneRoom : 'Sin Información'}}</span>
+    </div>
+    <ng-template [ngIf]="!user.edit">
+      <div class="col-12 py_30p">
+        <app-information></app-information>
+      </div>
+      <div class="col-12 movistar_form_separator_container">
+        <hr class="movistar_form_separator">
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="user.edit">
+      <div class="col-12 py_30p">
+        <app-data-update-modal></app-data-update-modal>
+      </div>
+    </ng-template>
+    <div class="col-12 d-flex justify-content-center movistar_form_title_content">
+      <span class="movistar_form_title_text">Direcciones</span>
+    </div>
+    <div class="col-12 mb_18p">
+      <label class="form-label d-block m_0p movistar_form_label_text">Dirección Fiscal:</label>
+      <span class="movistar_form_info_text p_0p">{{ user.fiscalAddress ? user.fiscalAddress : ''}}</span>
+    </div>
+    <div *ngIf="user.edit" class="col-12 mb_18p">
+      <label class="form-label d-block m_0p movistar_form_label_text">Dirección de Oficina:</label>
+      <span class="movistar_form_info_text p_0p">{{ user.OfficeAddress ? user.OfficeAddress : ''}}</span>
+    </div>
+    <div class="col-12 py_30p">
+      <div class="movistar_information_header_container">
+        <p class="movistar_information_header_text">
+          NOTA:
+          <br>
+          Si deseas actualizar la(s) dirección(es) asociadas a tu cuenta debes dirigirte a un Centro de Servicio
+          Movistar o a nuestra red de Agentes Autorizados.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 movistar_form_separator_container">
+      <hr class="movistar_form_separator">
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <button class="movistar_form_button_home">
+        <img src="https://mi.movistar.com.ve/actualizaciondedatos/web/img/Btn_Volver_Home.png">
+      </button>
+    </div>
+    <div class="col-12 movistar_form_separator_doble_container">
+      <hr class="movistar_form_separator">
+    </div>
+  </form>
+</div>

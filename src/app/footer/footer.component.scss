@@ -1,0 +1,148 @@
+.movistar_nav_button {
+  background-color: #019df4;
+  margin: 0;
+  border-radius: 5px;
+  height: 38px;
+}
+
+.movistar_nav_bar {
+  border-radius: 5px;
+  margin: 0;
+  background-color: #0b2739;
+  height: 38px;
+}
+
+.movistar_nav_bar_text {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  text-decoration: none;
+  cursor: default;
+  font-family: telefonicaSansRegular;
+}
+
+.movistar_nav_bar_a_text {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  text-decoration: none;
+  font-family: telefonicaSansRegular;
+}
+
+.movistar_nav_button a:hover {
+  color: #0b2739;
+  text-decoration: none;
+}
+
+.movistar_nav_bar a:hover {
+  color: #008cc0;
+}
+
+.movistar_nav_bar_separator {
+  margin: 0 10px 0 5px;
+  color: #5cd2ed;
+}
+
+.movistar_nav_button_text {
+  color: #fff;
+  font-size: 13px;
+  margin: 0;
+  font-family: telefonicaSansRegular;
+  text-decoration: none;
+}
+
+.movistar_nav_menu_items_panel {
+  height: 88px;
+  align-items: end;
+}
+
+.movistar_nav_menu_items_separator {
+  border-right: 4px;
+  border-right-style: solid;
+  padding-right: 10px;
+  border-right-color: #019DF4;
+}
+
+.movistar_nav_menu_items_tittle {
+  font-family: telefonicaSansBold, telefonicaSansRegular;
+  font-weight: bold;
+  font-size: 16px;
+  color: #019df4;
+}
+
+.movistar_nav_menu_items_ad_text {
+  font-family: telefonicaSansRegular;
+  font-size: 20px;
+  color: #019df4;
+  padding-top: 25px;
+}
+
+.movistar_nav_menu_items_ad {
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 0px;
+}
+
+.movistar_nav_bar_search_input {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1px 1px 1px 10px;
+}
+
+.movistar_nav_footer_bar {
+  border-radius: 5px;
+  background-color: #0b2739;
+  height: 40px;
+}
+
+.movistar_nav_bar_search_input_internal {
+  border-radius: 5px;
+  border-style: none;
+  font-size: 12px;
+  color: #999d9a;
+  font-family: telefonicaSansRegular;
+  margin-right: 20px;
+}
+
+.movistar_img_lupa {
+  height: 18px;
+  width: 18px;
+}
+
+.movistar_nav_bar_search_input_internal:focus-visible {
+  border-radius: 5px;
+  border-style: none !important;
+  border-color: #fff;
+  outline: white;
+}
+
+.movistar_div_separator {
+  height: 4px;
+  border-bottom: 1px solid #022f52;
+}
+
+
+.movistar_footer_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.movistar_footer_container {
+  padding-bottom: 30px;
+  background: #ffffff;
+}
+
+.movistar_footer_text {
+  color: #666;
+  font-size: 3.2mm;
+  padding-left: 12px;
+  padding-top: 2px;
+  float: right;
+  padding-right: 10px;
+  line-height: 24px;
+  font-family: telefonicaSansRegular;
+}
+
+.movistar_nav_footer_bar_text {
+  height: 40px;
+}

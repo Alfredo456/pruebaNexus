@@ -1,1 +1,207 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background: url("https://static.movistar.com.ve/MM/dashboard/contenedor/images/fndpage_2021.png");
+}
+
+@font-face {
+  font-family: 'telefonicaSansRegular';
+  src: url('./assets/fonts/Telefonica_Sans_Regular.ttf') format("truetype"),
+  url('./assets/fonts/Telefonica_Sans_Regular.woff') format("woff"),
+  url('./assets/fonts/Telefonica_Sans_Regular.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'telefonicaSansBold';
+  src: url('./assets/fonts/Telefonica_Sans_Bold.otf') format("opentype"),
+  url('./assets/fonts/Telefonica_Sans_Bold.ttf') format("truetype"),
+  url('./assets/fonts/Telefonica_Sans_Bold.woff') format("woff"),
+  url('./assets/fonts/Telefonica_Sans_Bold.woff2') format("woff2"),
+  url('./assets/fonts/Telefonica_Sans_Bold.eot?#iefix') format("embedded-opentype"),
+  url('./assets/fonts/Telefonica_Sans_Bold.svg') format("svg");
+}
+
+@font-face {
+  font-family: 'TelefonicaHand';
+  src: url('./assets/fonts/Telefonica-Hand.otf') format("opentype"),
+  url('./assets/fonts/Telefonica-Hand.ttf') format("truetype"),
+  url('./assets/fonts/TelefonicaWeb-Hand.woff') format("woff"),
+  url('./assets/fonts/TelefonicaWeb-Hand.woff2') format("woff2"),
+  url('./assets/fonts/TelefonicaWeb-Hand.eot?#iefix') format("embedded-opentype"),
+  url('./assets/fonts/TelefonicaWeb-Hand.svg') format("svg");
+}
+
+/*@font-face {
+  font-family: 'Telefonica';
+  src: url('./assets/fonts/Telefonica-Hand.otf') format("opentype"),
+  url('./assets/fonts/Telefonica-Hand.ttf') format("truetype"),
+  url('./assets/fonts/TelefonicaWeb-Hand.woff') format("woff"),
+  url('./assets/fonts/TelefonicaWeb-Hand.woff2') format("woff2"),
+  url('./assets/fonts/TelefonicaWeb-Hand.eot?#iefix') format("embedded-opentype"),
+  url('./assets/fonts/TelefonicaWeb-Hand.svg') format("svg");
+}*/
+
+@font-face {
+  font-family: 'TelefonicaBold';
+  src: url('./assets/fonts/Telefonica-Bold.otf') format("opentype"),
+  url('./assets/fonts/Telefonica-Bold.ttf') format("truetype"),
+  url('./assets/fonts/TelefonicaWeb-Bold.woff') format("woff"),
+  url('./assets/fonts/TelefonicaWeb-Bold.woff2') format("woff2"),
+  url('./assets/fonts/TelefonicaWeb-Bold.eot?#iefix') format("embedded-opentype"),
+  url('./assets/fonts/TelefonicaWeb-Bold.svg') format("svg");
+}
+
+@font-face {
+  font-family: 'TelefonicaRegular';
+  src: url('./assets/fonts/Telefonica-Regular.otf') format("opentype"),
+  url('./assets/fonts/Telefonica-Regular.ttf') format("truetype"),
+  url('./assets/fonts/TelefonicaWeb-Regular.woff') format("woff"),
+  url('./assets/fonts/TelefonicaWeb-Regular.woff2') format("woff2"),
+  url('./assets/fonts/TelefonicaWeb-Regular.eot?#iefix') format("embedded-opentype"),
+  url('./assets/fonts/TelefonicaWeb-Regular.svg') format("svg");
+}
+
+.flex_all_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_vertical_center {
+  display: flex;
+  align-items: center;
+}
+
+.mb_5p {
+  margin-bottom: 5px;
+}
+
+.mb_18p {
+  margin-bottom: 18px;
+}
+
+.mr_25p {
+  margin-right: 25px;
+}
+
+.mr_15p {
+  margin-right: 15px;
+}
+
+.pl_5p {
+  padding-left: 5px;
+}
+
+.px_15p {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.pr_0p {
+  padding-right: 0px;
+}
+
+.p_0p {
+  padding: 0px !important;;
+}
+
+.pl_15pp {
+  padding-left: 15% !important;
+}
+
+.pr_15pp {
+  padding-right: 15% !important;
+}
+
+.pl_10pp {
+  padding-left: 10% !important;
+}
+
+.pl_4pp {
+  padding-left: 4% !important;
+}
+
+.m_0p {
+  margin: 0px !important;
+}
+
+.pb_4p {
+  padding-bottom: 4px;
+}
+
+img {
+  border: none;
+}
+
+.movistar-col-21 {
+  flex: 0 0 auto;
+  width: 21% !important;
+}
+
+.movistar-col-79 {
+  flex: 0 0 auto;
+  width: 79% !important;
+}
+
+.movistar-col-16 {
+  flex: 0 0 auto;
+  width: 16% !important;
+}
+
+.movistar-col-84 {
+  flex: 0 0 auto;
+  width: 84% !important;
+}
+
+.movistar-col-22 {
+  flex: 0 0 auto;
+  width: 22% !important;
+}
+
+.movistar-col-78 {
+  flex: 0 0 auto;
+  width: 78% !important;
+}
+
+.cursor-d {
+  cursor: default;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 980px !important;
+}
+
+.py_30p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.movistar_information_header_text {
+  color: #954B97;
+  font-weight: bold;
+  font-family: TelefonicaRegular;
+  font-size: 14px;
+}
+
+
+.movistar_information_header_text {
+  color: #954B97;
+  font-weight: bold;
+  font-family: TelefonicaRegular;
+  font-size: 14px;
+}
+
+
+.movistar_information_header_container {
+  padding-left: 7%;
+}
+
+.movistar_information_a_text {
+  color: #0092C1;
+  text-decoration: none;
+}
+

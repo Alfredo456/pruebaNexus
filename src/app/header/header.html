@@ -1,0 +1,48 @@
+<div class="container movistar_header_container">
+  <div class="row">
+    <div class="movistar_nav_button col-1 flex_all_center">
+      <a (click)="goToLink('https://www.movistar.com.ve/Particulares/home-particulares.html')"
+         class="movistar_nav_button_text cursor-p">Movistar</a>
+    </div>
+    <div class="movistar_nav_bar col-11 flex_vertical_center justify-content-end">
+      <img alt="" class="mb_5p" src="https://static.movistar.com.ve/MM/header/HeaderUsuario.png">
+      <span class="movistar_nav_bar_text">
+        Hola, {{ user.name + ' ' + user.lastName }}
+      </span>
+      <img alt="" class="movistar_nav_bar_separator"
+           src="https://static.movistar.com.ve/MM/dashboard/header/images/HeaderPipe.png">
+      <a class="movistar_nav_bar_a_text" href="#">
+        Salir
+      </a>
+    </div>
+  </div>
+  <div class="row movistar_nav_menu_items_panel pb_4p">
+    <div class="movistar-col-16 d-flex pr_0p">
+      <div class="movistar_nav_menu_items_separator">
+        <img alt="" src="https://static.movistar.com.ve/MM/header/HeaderHome.png">
+      </div>
+      <div class="pl_5p mr_15p">
+        <img src="https://static.movistar.com.ve/MM/header/HeaderMenuClic.png">
+      </div>
+      <div class="">
+        <span class="movistar_nav_menu_items_tittle">Menú</span>
+      </div>
+    </div>
+    <div class="movistar-col-84 movistar_nav_menu_items_ad">
+      <img alt="" src="https://static.movistar.com.ve/MM/header/HeaderMenuFlecha.png">
+      <span class="movistar_nav_menu_items_ad_text">Todas tus consultas y transacciones en un clic</span>
+    </div>
+  </div>
+  <div class="row movistar_nav_footer_bar flex_vertical_center ">
+    <div class="col-4 movistar_nav_button_text cursor-d">
+      <span>Mi línea {{ ' ' + user.phone }}</span>
+    </div>
+    <div class="col-8 d-flex justify-content-end">
+      <div class="movistar_nav_bar_search_input flex_vertical_center">
+        <input class="movistar_nav_bar_search_input_internal" placeholder="busca en Mi Movistar">
+        <img class="movistar_img_lupa" src="https://mi.movistar.com.ve/images/lupa_Spotlight.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="row movistar_div_separator"></div>
+</div>
