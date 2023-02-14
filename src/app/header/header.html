@@ -7,7 +7,7 @@
     <div class="movistar_nav_bar col-11 flex_vertical_center justify-content-end">
       <img alt="" class="mb_5p" src="https://static.movistar.com.ve/MM/header/HeaderUsuario.png">
       <span class="movistar_nav_bar_text">
-        Hola, {{ user.name + ' ' + user.lastName }}
+        Hola, {{ user && user.name && user.lastName ? (user.name + ' ' + user.lastName) : '' }}
       </span>
       <img alt="" class="movistar_nav_bar_separator"
            src="https://static.movistar.com.ve/MM/dashboard/header/images/HeaderPipe.png">
@@ -35,7 +35,7 @@
   </div>
   <div class="row movistar_nav_footer_bar flex_vertical_center ">
     <div class="col-4 movistar_nav_button_text cursor-d">
-      <span>Mi línea {{ ' ' + user.phone }}</span>
+      <span>Mi línea {{ user && user.phone ? (' ' + user.phone) : '' }}</span>
     </div>
     <div class="col-8 d-flex justify-content-end">
       <div class="movistar_nav_bar_search_input flex_vertical_center">

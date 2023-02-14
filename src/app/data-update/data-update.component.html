@@ -15,36 +15,36 @@
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label movistar_form_label_text">Apellidos:</label>
-      <span class="movistar_form_info_text">{{ user.lastName ? user.lastName : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.lastName ? user.lastName : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label movistar_form_label_text">Nombres:</label>
-      <span class="movistar_form_info_text">{{ user.name ? user.name : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.name ? user.name : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label movistar_form_label_text">Documento de Identidad:</label>
       <span
-        class="movistar_form_info_text">{{ user.identificationDocument ? user.identificationDocument : 'Sin Información'}}</span>
+        class="movistar_form_info_text">{{ user && user.identificationDocument ? user.identificationDocument : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label movistar_form_label_text">Sexo:</label>
-      <span class="movistar_form_info_text">{{ user.gender ? user.gender : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.gender ? user.gender : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label movistar_form_label_text">Fecha de Nacimiento:</label>
-      <span class="movistar_form_info_text">{{ user.dateOfBirth ? user.dateOfBirth : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.dateOfBirth ? user.dateOfBirth : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label movistar_form_label_text">Nacionalidad:</label>
-      <span class="movistar_form_info_text">{{ user.nationality ? user.nationality : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.nationality ? user.nationality : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label movistar_form_label_text">País de Nacimiento:</label>
-      <span class="movistar_form_info_text">{{ user.countryOfBirth ? user.countryOfBirth : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.countryOfBirth ? user.countryOfBirth : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label movistar_form_label_text">Estado de Nacimiento:</label>
-      <span class="movistar_form_info_text">{{ user.stateOfBirth ? user.stateOfBirth : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.stateOfBirth ? user.stateOfBirth : 'Sin Información'}}</span>
     </div>
     <div class="col-12 movistar_form_separator_container">
       <hr class="movistar_form_separator">
@@ -54,20 +54,20 @@
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label d-block m_0p movistar_form_label_text">Correo Electrónico Principal:</label>
-      <span class="movistar_form_info_text p_0p">{{ user.mainEmail ? user.mainEmail : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text p_0p">{{ user && user.mainEmail ? user.mainEmail : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label d-block m_0p movistar_form_label_text">Correo Electrónico Alterno:</label>
       <span
-        class="movistar_form_info_text p_0p">{{ user.alternateEmail ? user.alternateEmail : 'Sin Información'}}</span>
+        class="movistar_form_info_text p_0p">{{ user && user.alternateEmail ? user.alternateEmail : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label d-block m_0p movistar_form_label_text">Facebook:</label>
-      <span class="movistar_form_info_text p_0p">{{ user.Facebook ? user.Facebook : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text p_0p">{{ user && user.Facebook ? user.Facebook : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label d-block m_0p movistar_form_label_text">Twitter:</label>
-      <span class="movistar_form_info_text p_0p">{{ user.Twitter ? user.Twitter : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text p_0p">{{ user && user.Twitter ? user.Twitter : 'Sin Información'}}</span>
     </div>
 
     <div class="col-12 d-flex justify-content-center movistar_form_title_content">
@@ -75,21 +75,21 @@
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label movistar_form_label_text">Principal:</label>
-      <span class="movistar_form_info_text">{{ user.phoneMajor ? user.phoneMajor : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.phoneMajor ? user.phoneMajor : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label movistar_form_label_text">Secundario:</label>
-      <span class="movistar_form_info_text">{{ user.phoneSecondary ? user.phoneSecondary : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.phoneSecondary ? user.phoneSecondary : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p">
       <label class="form-label movistar_form_label_text">Oficina:</label>
-      <span class="movistar_form_info_text">{{ user.phoneOffice ? user.phoneOffice : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.phoneOffice ? user.phoneOffice : 'Sin Información'}}</span>
     </div>
     <div class="col-6 mb_18p pl_15pp">
       <label class="form-label movistar_form_label_text">Habitación:</label>
-      <span class="movistar_form_info_text">{{ user.phoneRoom ? user.phoneRoom : 'Sin Información'}}</span>
+      <span class="movistar_form_info_text">{{ user && user.phoneRoom ? user.phoneRoom : 'Sin Información'}}</span>
     </div>
-    <ng-template [ngIf]="!user.edit">
+    <ng-template [ngIf]="user && !user.edit">
       <div class="col-12 py_30p">
         <app-information></app-information>
       </div>
@@ -97,7 +97,7 @@
         <hr class="movistar_form_separator">
       </div>
     </ng-template>
-    <ng-template [ngIf]="user.edit">
+    <ng-template [ngIf]="user && user.edit">
       <div class="col-12 py_30p">
         <app-data-update-modal></app-data-update-modal>
       </div>
@@ -107,11 +107,11 @@
     </div>
     <div class="col-12 mb_18p">
       <label class="form-label d-block m_0p movistar_form_label_text">Dirección Fiscal:</label>
-      <span class="movistar_form_info_text p_0p">{{ user.fiscalAddress ? user.fiscalAddress : ''}}</span>
+      <span class="movistar_form_info_text p_0p">{{ user && user.fiscalAddress ? user.fiscalAddress : ''}}</span>
     </div>
-    <div *ngIf="user.edit" class="col-12 mb_18p">
+    <div *ngIf="user && user.edit" class="col-12 mb_18p">
       <label class="form-label d-block m_0p movistar_form_label_text">Dirección de Oficina:</label>
-      <span class="movistar_form_info_text p_0p">{{ user.OfficeAddress ? user.OfficeAddress : ''}}</span>
+      <span class="movistar_form_info_text p_0p">{{ user && user.OfficeAddress ? user.OfficeAddress : ''}}</span>
     </div>
     <div class="col-12 py_30p">
       <div class="movistar_information_header_container">
